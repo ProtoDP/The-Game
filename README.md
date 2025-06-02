@@ -1,4 +1,4 @@
-#Platformer Game
+# Platformer Game
 ## Description
 Basic platformer with jumping , crouching , sprinting and wallrunning and jumping 
 ### Demo
