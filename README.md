@@ -1,0 +1,4 @@
+Shift 
+cntrl
+space
+Wasd
