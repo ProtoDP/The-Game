@@ -13,7 +13,7 @@ Basic platformer with jumping , crouching , sprinting and wallrunning and jumpin
 -Wallrunning and walljumping 
 -crouching
 -gravity using Character controller
-# Download adn installation
+# Download and installation
 Download the game files labeled "The Game" and start TheGame.exe
 # Script descriptors
 ## -Movement.cs
