@@ -9,7 +9,7 @@ Basic platformer with jumping , crouching , sprinting and wallrunning and jumpin
 -C#
 -Unity game engine 
 -Clion Ide
-Unique features
+## Unique features
 -Wallrunning and walljumping 
 -crouching
 -gravity using Character controller
@@ -42,7 +42,8 @@ void	Перезагружает текущую сцену.
 ## -Thebigwin.cs/ Thebigdie.cs
 ### OnTriggerEnter(Collider other)	
 Void	Если игрок входит в триггер с тегом kiw, вызывает окончание игры (GameOver()).
-### OnTriggerEnter(Collider other)	void	Если игрок входит в триггер с тегом wiw, вызывает победу в игре (GameWin()).
+### OnTriggerEnter(Collider other)	
+void	Если игрок входит в триггер с тегом wiw, вызывает победу в игре (GameWin()).
 
 
 
