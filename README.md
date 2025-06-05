@@ -1,49 +1,51 @@
-# Platformer Game
-## Description
-Basic platformer with jumping , crouching , sprinting and wallrunning and jumping 
-### Demo
-![image](https://github.com/user-attachments/assets/d2c57d3f-0995-4f00-be94-058a814fb5ea)
+# Платформер  
+## Описание  
+Простой платформер с прыжками, приседанием, спринтом, бегом по стенам и прыжками с них.  
+### Демонстрация  
+![image](https://github.com/user-attachments/assets/d2c57d3f-0995-4f00-be94-058a814fb5ea)  
 
+# Технологии  
+- C#  
+- Игровой движок Unity  
+- IDE Clion  
 
-# Tech
--C#
--Unity game engine 
--Clion Ide
-## Unique features
--Wallrunning and walljumping 
--crouching
--gravity using Character controller
-# Download and installation
-Download the game files labeled "The Game" and start TheGame.exe
-# Script descriptors
-## -Movement.cs
-### Start().	
-Void	Сохраняет исходные параметры роста игрока и камеры, чтобы правильно работать с приседанием
-### CheckWall()	
-Void	Проверяет, находятся ли стены слева или справа от игрока для возможности бегать по стенам.
-### Update()	
- void	•	Основной цикл управления движением: проверка земли, бег, прыжки, приседание, бег по стенам, обработка гравитации, наклон камеры и переход между состояниями.
-## -CamFPS.cs
-### Start()
-	void	Прячет курсор и блокирует его в центре экрана для имитации поведения камеры от первого лица.
-### Update()
-	void	Обрабатывает вращение камеры на основе движения мыши и вращает объект orientation по горизонтали.
-## -Gamedm.cs
-### Start()	
-Void	Выключает надписи «Game Over» и «You Win» при запуске.
-### Update()	
-void	Если игра окончена, ожидает нажатия любой клавиши для перезапуска или выхода (если победа).
-### GameOver()	
-Void	Активирует режим проигрыша и отображает сообщение об окончании игры.
-### GameWin()	
-void	Активирует режим победы и отображает соответствующее сообщение.
-### RestartGame()	
-void	Перезагружает текущую сцену.
-## -Thebigwin.cs/ Thebigdie.cs
-### OnTriggerEnter(Collider other)	
-Void	Если игрок входит в триггер с тегом kiw, вызывает окончание игры (GameOver()).
-### OnTriggerEnter(Collider other)	
-void	Если игрок входит в триггер с тегом wiw, вызывает победу в игре (GameWin()).
+## Уникальные особенности  
+- Бег по стенам и прыжки с них  
+- Приседание  
+- Гравитация с использованием Character Controller  
 
+# Скачивание и установка  
+Скачайте игровые файлы с названием «The Game» и запустите TheGame.exe  
 
+# Описание скриптов  
+## -Movement.cs  
+### Start()  
+void Сохраняет исходные параметры роста игрока и камеры для корректной работы приседания.  
+### CheckWall()  
+void Проверяет наличие стен слева или справа от игрока для возможности бега по стенам.  
+### Update()  
+void • Основной цикл управления движением: проверка земли, бег, прыжки, приседание, бег по стенам, обработка гравитации, наклон камеры и переключение состояний.  
 
+## -CamFPS.cs  
+### Start()  
+void Прячет курсор и блокирует его в центре экрана для имитации камеры от первого лица.  
+### Update()  
+void Обрабатывает вращение камеры на основе движения мыши и поворачивает объект orientation по горизонтали.  
+
+## -Gamedm.cs  
+### Start()  
+void Отключает надписи «Game Over» и «You Win» при запуске.  
+### Update()  
+void Если игра окончена, ожидает нажатия любой клавиши для перезапуска или выхода (в случае победы).  
+### GameOver()  
+void Активирует режим проигрыша и отображает сообщение об окончании игры.  
+### GameWin()  
+void Активирует режим победы и отображает соответствующее сообщение.  
+### RestartGame()  
+void Перезагружает текущую сцену.  
+
+## -Thebigwin.cs / Thebigdie.cs  
+### OnTriggerEnter(Collider other)  
+void Если игрок входит в триггер с тегом kiw, вызывает окончание игры (GameOver()).  
+### OnTriggerEnter(Collider other)  
+void Если игрок входит в триггер с тегом wiw, вызывает победу в игре (GameWin()).
